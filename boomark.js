@@ -1,1 +1,1 @@
-
+javascript:(function(){const owner='PixelPilot1';const repo='google-snake-test';const path='code.html';const apiUrl=`https://api.github.com/repos/${owner}/${repo}/contents/${path}`;fetch(apiUrl).then(response=>response.json()).then(data=>{const fileContent=atob(data.content);console.log(fileContent);}).catch(error=>console.error('Error fetching file:',error));})();
